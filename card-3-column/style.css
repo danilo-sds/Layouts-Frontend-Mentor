@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --font-title: 'Big Shoulders Display', cursive;
+    --font-body: 'Lexend Deca', sans-serif;
+    --background-sedans: hsl(31, 77%, 52%);
+    --background-suvs: hsl(184, 100%, 22%);
+    --background-luxury: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 307px;
+}
+
+.card-sedans {
+    background: var(--background-sedans);
+    padding: 40px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-suvs {
+    background: var(--background-suvs);
+    padding: 40px;
+}
+
+.card-luxury {
+    background: var(--background-luxury);
+    padding: 40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.information h1 {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: var(--font-title);
+    padding: 25px 0;
+}
+
+.information p {
+    color: hsl(0, 0%, 95%);
+    width: 220px;
+    display: inline-block;
+}
+
+.btn {
+    margin: 90px 0 20px 0;
+}
+
+.btn a {
+    color: var(--background-sedans);
+    padding: 10px 25px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 20px;
+}
+
+.btn-sedans a:hover {
+    background: var(--background-sedans);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-suvs a {
+    color: var(--background-suvs);
+    padding: 10px 25px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 20px;
+}
+
+.btn-suvs a:hover {
+    background: var(--background-suvs);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-luxury a {
+    color: var(--background-luxury);
+    padding: 10px 25px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 20px;
+}
+
+.btn-luxury a:hover {
+    background: var(--background-luxury);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width:376px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .card-sedans {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .card-luxury {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

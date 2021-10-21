@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.img-main {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.container {
+    background: #fff;
+    width: 450px;
+    border-radius: 20px;
+}
+
+.card-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin: 30px 0 20px 0;
+}
+
+.text p {
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: hsl(224, 23%, 55%);
+}
+
+.box-plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.information-plan p {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.information-plan span {
+    color: hsl(224, 23%, 55%);
+}
+
+.btn-change a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.btn-change a:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.btn-buy {
+    background: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 10px 100px;
+    width: 80%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.btn-buy a {
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    width: 300px;
+}
+
+.btn-buy:hover {
+    background: hsl(224, 23%, 55%);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.432);
+}
+
+.btn-cancel {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 100px;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.btn-cancel a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.btn-cancel a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width:376px) {
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+    .container {
+        width: 328px;
+    }
+    .btn-buy {
+        width: 80%;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 25px 0;
+    }
+    .btn-buy a {
+        width: 170px;
+        display: inline-block;
+        text-align: center;
+    }
+    .btn-cancel {
+        width: 80%;
+        border-radius: 10px;
+        padding: 10px 20%;
+    }
+}

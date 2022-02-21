@@ -16,13 +16,16 @@ body {
 
 .header {
     background: #fff;
-    width: 635px;
-    padding: 46px 0 0 40px;
+    max-width: 635px;
+    padding: 46px 67px 0 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .header h2 {
     color: hsl(179, 62%, 43%);
     font-weight: 700;
+    max-width: 635px;
 }
 
 .header .text-information {
@@ -35,7 +38,7 @@ body {
 .header .text-description {
     padding-bottom: 44px;
     color: hsl(218, 22%, 67%);
-    width: 530px;
+    max-width: 530px;
     display: inline-block;
     font-weight: 400;
     line-height: 25px;
@@ -43,14 +46,80 @@ body {
 
 .boxs-information {
     display: flex;
+    color: white;
 }
 
 .monthly-subscription {
     background: hsl(179, 62%, 43%);
     flex: 1;
+    padding: 40px 20px 40px 20px;
+    border-bottom-left-radius: 10px;
+}
+
+#number-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.information-monthly {
+    display: flex;
+    margin: 26px 0 16px 0;
+}
+
+#span-text {
+    font-weight: normal;
+    margin-left: 10px;
+    color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-monthly {
+    font-size: 16px;
+}
+
+#button button {
+    background: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto 0;
 }
 
 .why-us {
     background: #4abebd;
     flex: 1;
+    padding: 40px 20px 20px 40px;
+    border-bottom-right-radius: 10px;
+}
+
+.why-us h3 {
+    margin-bottom: 19px;
+}
+
+.why-us .descrpiton-whyUs p {
+    margin-bottom: 5px;
+    color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 376px) {
+    .boxs-information {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-description {
+        padding-right: 10px;
+    }
+    #button button {
+        width: 100%;
+    }
+    .header .text-description {
+        padding-bottom: 5px;
+        max-width: 600px;
+    }
 }

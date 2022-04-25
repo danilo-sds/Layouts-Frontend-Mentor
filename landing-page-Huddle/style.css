@@ -45,7 +45,7 @@ header {
 
 .information p {
     color: #fff7ff;
-    max-width: 440px;
+    max-width: 455px;
     margin: 0;
     line-height: 25px;
 }
@@ -93,10 +93,16 @@ footer i:hover {
 
 @media(max-width: 376px) {
     body {
-        background-image: url(/images/bg-mobile.svg);
+        background-image: url(img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
     header {
         margin: 40px 0px 55px 10px;
+    }
+    img.logo {
+        width: 200px;
+        height: auto;
     }
     .container {
         padding-left: 0;
@@ -113,12 +119,25 @@ footer i:hover {
     }
     .information h1 {
         text-align: center;
+        width: 275px;
+        font-size: 25px;
+        margin: 45px 0px 10px;
     }
     .information p {
         color: #fff;
-        max-width: 290px;
+        width: 300px;
         margin: 0;
         text-align: center;
+    }
+    button {
+        padding: 12px 60px;
+        width: 200px;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        color: #5b4e83;
+        border: none;
+        cursor: pointer;
     }
     footer {
         margin-top: 50px;

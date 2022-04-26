@@ -78,6 +78,10 @@ footer a {
     padding: 7px;
 }
 
+footer a:nth-child(3) {
+    margin-right: 0px;
+}
+
 footer i {
     color: #fff;
     border: 1px solid #fff;
@@ -144,6 +148,7 @@ footer i:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px 0 20px;
+        margin: 20px 0px;
+        padding: 20px 0px;
     }
 }
